@@ -4,7 +4,7 @@ y0 = initialValues();
 options = odeset('RelTol',1e-9,'AbsTol',1e-9);
 
 t = 0:1:120;
-condition = 2;
+condition = 2; % EGF -> 20 nM, 2 nM
 
 totalShc = zeros(length(t),condition);
 totalGrb2 = zeros(length(t),condition);
@@ -15,9 +15,9 @@ ShGS = zeros(length(t),condition);
 PLCgamma = zeros(length(t),condition);
 
 for i=1:condition
-    % i==1 -> 20nM
-
-    if i==2 % 2nM
+    if i==1 % EGF: 20 nM
+        y0(V.EGF) = 680.0;
+    elseif i==2 % EGF: 2 nM
         y0(V.EGF) = 68.0;
     end
 
