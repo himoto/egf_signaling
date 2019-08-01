@@ -70,7 +70,7 @@ xlabel("TIME (s)");
 ylabel("Total Phosphorylated PLCγ (nM)");
 
 yyaxis right;
-plot(t,PLCgamma(:,3),'b--');
+plot(t,PLCgamma(:,3),'--');
 ylim([0 105]);
 set(gca, 'Ytick', [0 30 60 90],...
     'Yticklabel', [0 30 60 90]);
