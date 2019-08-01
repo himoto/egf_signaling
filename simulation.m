@@ -1,10 +1,11 @@
+global f_param;
 global V;
 
 y0 = initialValues();
 options = odeset('RelTol',1e-9,'AbsTol',1e-9);
 
 t = 0:1:120;
-condition = 2; % EGF -> 20 nM, 2 nM
+condition = 3;
 
 totalShc = zeros(length(t),condition);
 totalGrb2 = zeros(length(t),condition);
@@ -19,6 +20,10 @@ for i=1:condition
         y0(V.EGF) = 680.0;
     elseif i==2 % EGF: 2 nM
         y0(V.EGF) = 68.0;
+    elseif i==3 % Absence of the PLCγ P translocation step
+        y0(V.EGF) = 680.0;
+        f_param.k25f = 0.0;
+        f_param.k25b = 0.0;
     end
 
     [T,Y] = ode15s(@diffeq,[0 120],y0);
