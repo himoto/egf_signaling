@@ -1,0 +1,55 @@
+function setParamConst()
+    global f_param;
+
+    f_param.k1f = 0.003;
+    f_param.k1b = 0.06;
+    f_param.k2f = 0.01;
+    f_param.k2b = 0.1;
+    f_param.k3f = 1;
+    f_param.k3b = 0.01;
+    f_param.V4 = 450;
+    f_param.K4 = 50;
+    f_param.k5f = 0.06;
+    f_param.k5b = 0.2;
+    f_param.k6f = 1;
+    f_param.k6b = 0.05;
+    f_param.k7f = 0.3;
+    f_param.k7b = 0.006;
+    f_param.V8 = 1;
+    f_param.K8 = 100;
+    f_param.k9f = 0.003;
+    f_param.k9b = 0.05;
+    f_param.k10f = 0.01;
+    f_param.k10b = 0.06;
+    f_param.k11f = 0.03;
+    f_param.k11b = 0.0045;
+    f_param.k12f = 1.5e-3;
+    f_param.k12b = 1.0e-4;
+    f_param.k13f = 0.09;
+    f_param.k13b = 0.6;
+    f_param.k14f = 6;
+    f_param.k14b = 0.06;
+    f_param.k15f = 0.3;
+    f_param.k15b = 9e-4;
+    f_param.V16 = 1.7;
+    f_param.K16 = 340;
+    f_param.k17f = 0.003;
+    f_param.k17b = 0.1;
+    f_param.k18f = 0.3;
+    f_param.k18b = 9e-4;
+    f_param.k19f = 0.01;
+    f_param.k19b = 2.14e-2;
+    f_param.k20f = 0.12;
+    f_param.k20b = 2.4e-4;
+    f_param.k21f = 0.003;
+    f_param.k21b = 0.1;
+    f_param.k22f = 0.03;
+    f_param.k22b = 0.064;
+    f_param.k23f = 0.1;
+    f_param.k23b = 0.021;
+    f_param.k24f = 0.009;
+    f_param.k24b = 4.29e-2;
+    f_param.k25f = 1;
+    f_param.k25b = 0.03;
+
+end
